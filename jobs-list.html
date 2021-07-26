@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<title>Gradforce</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors/blue.css">
+
+</head>
+<body class="gray">
+
+<div id="wrapper">
+
+
+<!-- Header-->
+<header id="header-container" class="fullwidth dashboard-header not-sticky">
+    <table id="tab" border="1">
+    </table>
+
+  <a href="dashboard_er.html">back to the dashboard</a>
+
+<!-- Scripts
+================================================== -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-migrate-3.1.0.min.js"></script>
+<script src="js/mmenu.min.js"></script>
+<script src="js/tippy.all.min.js"></script>
+<script src="js/simplebar.min.js"></script>
+<script src="js/bootstrap-slider.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/snackbar.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/counterup.min.js"></script>
+<script src="js/magnific-popup.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/custom.js"></script>
+
+
+</body>
+</html>
+
+<script>
+    var tabData="";
+    $(document).ready(function () {
+        initVar();
+        $.ajax({
+            async:false,
+            url:'employers_data.php',
+            data:{},
+            type:'get',
+            dataType:'text',
+            success:function(data){
+                tabData=data;
+                initVar();
+                StrToArr(tabData);
+            }
+        });
+    });
+    function initVar(){
+        tabDom=$('#tab');
+    }
+    function StrToArr(str){
+        var arr=str.split('^');
+        var brr=[];
+        for(var i in arr){
+            brr.push(arr[i].split(','));
+        }
+        initHtml(brr);
+    }
+    function initHtml(arr){  
+        var str = "";
+        str +="<tr><th>firstName</th> <th>lastName</th><th>email</th><th>phone</th><th>University</th><th>educationl</th><th>visatype</th><th>workexp</th><th>joytype</th>/tr>"
+        for(var i in arr){
+            str+=`<tr>`;
+            for(var j in arr[i]){
+                str+= "<td>" + arr[i][j] + "</td>";
+            }
+            str+=`</tr>`
+<a href="dashboard_er.html" target="_blank">back to the dashboard</a> ;
+        }
+        $('#tab').html(str);
+    }
+</script>

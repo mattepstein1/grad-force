@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<title>Gradforce </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors/blue.css">
+
+</head>
+<body>
+
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header-container" class="fullwidth">
+	<div id="header">
+		<div class="container">
+            <div class="left-side">
+				<div id="logo">
+					<a href="index.html"><img src="images/logo.png" alt=""></a>
+				</div>
+		<!-- Main Nav -->
+				<nav id="navigation">
+					<ul id="responsive">
+						<li><a href="index.html" class="current">Home</a>
+							<ul class="dropdown-nav">
+								<li><a href="index.html">main page</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Find Work</a>
+							<ul class="dropdown-nav">
+								<li><a href="#">Browse Jobs</a>
+									<ul class="dropdown-nav">
+										<li><a href="jobs-list-layout-1.html">List job</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="clearfix"></div>
+			</div>
+			<div class="right-side">
+				<div class="header-widget">
+					<div class="header-notifications user-menu">
+						<div class="header-notifications-trigger">
+							<a href="#"><div class="user-avatar status-online"><img src="images/user-avatar-small-01.jpg" alt=""></div></a>
+						</div>
+						<div class="header-notifications-dropdown">
+
+							<!-- User  -->
+							<div class="user-status">
+
+								<!-- User Name -->
+								<div class="user-details">
+									<div class="user-avatar status-online"><img src="images/user-avatar-small-01.jpg" alt=""></div>
+									<div class="user-name">
+										Tom Smith <span>Freelancer</span>
+									</div>
+								</div>
+								
+								<!-- User Status Switcher -->
+								<div class="status-switch" id="snackbar-user-status">
+									<label class="user-online current-status">Online</label>
+									<label class="user-invisible">Invisible</label>
+									<!-- Status Indicator -->
+									<span class="status-indicator" aria-hidden="true"></span>
+								</div>	
+						</div>
+						<ul class="user-menu-small-nav">
+							<li><a href="dashboard.html"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
+							<li><a href="dashboard-settings.html"><i class="icon-material-outline-settings"></i> Settings</a></li>
+							<li><a href="index-logged-out.html"><i class="icon-material-outline-power-settings-new"></i> Logout</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
+				<span class="mmenu-trigger">
+					<button class="hamburger hamburger--collapse" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</span>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="clearfix"></div>
+
+<!-- Titlebar -->
+<div id="titlebar" class="gradient">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+
+				<center><h2 style="font-size: 60px;">Contact</h2></center>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Content -->
+		<div class="col-xl-8 col-lg-8 offset-xl-2 offset-lg-2">
+
+			<section id="contact" class="margin-bottom-100">
+				<h3 class="headline margin-top-60 margin-bottom-35">Any questions? Feel free to contact us!</h3>
+				<form method="post" name="contactform" id="contactform" autocomplete="on">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="input-with-icon-left">
+								<input class="with-border" name="name" type="text" id="name" placeholder="Your Name" required="required" />
+								<i class="icon-material-outline-account-circle"></i>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="input-with-icon-left">
+								<input class="with-border" name="email" type="email" id="email" placeholder="Email Address" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" required="required" />
+								<i class="icon-material-outline-email"></i>
+							</div>
+						</div>
+					</div>
+					<div class="input-with-icon-left">
+						<input class="with-border" name="subject" type="text" id="subject" placeholder="Subject" required="required" />
+						<i class="icon-material-outline-assignment"></i>
+					</div>
+					<div>
+						<textarea class="with-border" name="comments" cols="40" rows="5" id="comments" placeholder="Message" spellcheck="true" required="required"></textarea>
+					</div>
+					<input type="submit" class="submit button margin-top-15" id="submit" value="Submit Message" />
+				</form>
+			</section>
+		</div>
+	</div>
+</div>
+
+    <!-- Footer -->
+<div id="footer">
+            <div class="footer-top-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="footer-rows-container">
+                                <div class="footer-rows-right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-middle-section">
+                        <div class="container">
+                            <div class="row">
+                                <!-- Links -->
+                                <div class="col-xl-2 col-lg-2 col-md-3">
+                                    <div class="footer-links">
+                                        <h3>For Candidates</h3>
+                                        <ul>
+                                            <li><a href="jobs-list-layout-1.html"><span>Browse Jobs</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Links -->
+                                <div class="col-xl-2 col-lg-2 col-md-3">
+                                    <div class="footer-links">
+                                        <h3>Helpful Links</h3>
+                                        <ul>
+                                            <li><a href="pages-contact.html"><span>Contact</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Links -->
+                                <div class="col-xl-2 col-lg-2 col-md-3">
+                                    <div class="footer-links">
+                                        <h3>Account</h3>
+                                        <ul>
+                                            <li><a href="pages-login.html"><span>Log In</span></a></li>
+                                            <li><a href="dashboard.html"><span>My Account</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    © 2020 <strong>Gradforce </strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!-- Scripts -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-migrate-3.1.0.min.js"></script>
+<script src="js/mmenu.min.js"></script>
+<script src="js/tippy.all.min.js"></script>
+<script src="js/simplebar.min.js"></script>
+<script src="js/bootstrap-slider.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/snackbar.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/counterup.min.js"></script>
+<script src="js/magnific-popup.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- Snackbar // documentation: https://www.polonel.com/snackbar/ -->
+<script>
+// Snackbar for user status switcher
+$('#snackbar-user-status label').click(function() { 
+	Snackbar.show({
+		text: 'Your status has been changed!',
+		pos: 'bottom-center',
+		showAction: false,
+		actionText: "Dismiss",
+		duration: 3000,
+		textColor: '#fff',
+		backgroundColor: '#383838'
+	}); 
+}); 
+
+	// how to make the user work start 
+	var tabData="";
+	//request userinfo for icon and buttons
+	$(document).ready(function () {
+		$.ajax({
+			async:false,
+			url:'user_info.php',
+			data:{},
+			type:'get',
+			dataType:'text',
+			success:function(data){
+				tabData=data;
+				showUser(tabData);
+				$("#login_div").show()
+			}
+		});
+	});
+	function showUser(str){
+		var arr=str.split('^');
+		var brr=[];
+		for(var i in arr){
+			brr.push(arr[i].split(','));
+		}
+		if(brr[0] == null || brr[0] == "" || brr[0] == undefined){
+			$("#login_div").html('<a href="pages-login.html"><i class="icon-material-outline-power-settings-new"></i> LogIn</a>');
+		}else{
+			$('#username').html(brr[0]);
+			$("#user_type").html(brr[2]);
+		}
+	}
+// finish
+</script>
+
+
+</body>
+</html>

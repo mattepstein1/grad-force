@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Gradforce</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors/blue.css">
+
+</head>
+<body>
+<div id="wrapper">
+
+<!-- Header  -->
+<header id="header-container" class="fullwidth">
+	<div id="header">
+		<div class="container">
+			<div class="left-side">
+				<div id="logo">
+					<a href="index.html"><img src="images/logo.png" alt=""></a>
+				</div>
+                <!-- Nav -->
+				<nav id="navigation">
+					<ul id="responsive">
+						<li><a href="index.html" class="current">Home</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="clearfix"></div>				
+			</div>
+			<div class="right-side">
+                
+				<!-- Mobile Nav-->
+				<span class="mmenu-trigger">
+					<button class="hamburger hamburger--collapse" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</span>
+			</div>
+		</div>
+	</div>
+</header>
+    
+<div class="clearfix"></div>
+<!-- Titlebar -->
+<div id="titlebar" class="gradient">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Register</h2>
+
+				<!-- Breadcrumbs -->
+				<nav id="breadcrumbs" class="dark">
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li>Register</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Page Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-xl-5 offset-xl-3">
+			<div class="login-register-page">
+                
+				<!-- Welcome  -->
+				<div class="welcome-text">
+					<h3 style="font-size: 26px;">Let's create your account!</h3>
+					<span>Already have an account? <a href="pages-login.html">Log In!</a></span>
+				</div>
+
+				<!-- Registration Form -->
+				<form method="post" id="register-account-form" action="register.php">
+					<!-- Account Type -->
+					<div class="account-type">
+						<div>
+							<input type="radio" name="account-type-radio" id="employee-radio" class="account-type-radio" value ="Employee" checked/>
+							<label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle" ></i> Employee</label>
+						</div>
+						<div>
+							<input type="radio" name="account-type-radio" id="employer-radio" class="account-type-radio" value="Employer"/>
+							<label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-business-center" value =""></i> Employer</label>
+						</div>
+					</div>
+					<div class="input-with-icon-left">
+						<i class="icon-material-baseline-mail-outline"></i>
+						<input type="text" class="input-text with-border" name="emailaddress-register" id="emailaddress-register" placeholder="Email Address" required/>
+					</div>
+					<div class="input-with-icon-left"   data-tippy-placement="bottom">
+						<i class="icon-material-outline-lock"></i>
+						<input type="text" class="input-text with-border" name="username-register" id="username-register" placeholder="User Name" required/>
+					</div>
+					<div class="input-with-icon-left" title="Should be at least 8 characters long" data-tippy-placement="bottom">
+						<i class="icon-material-outline-lock"></i>
+						<input type="password" class="input-text with-border" name="password-register" id="password-register" placeholder="Password" required/>
+					</div>
+
+					<div class="input-with-icon-left">
+						<i class="icon-material-outline-lock"></i>
+						<input type="password" class="input-text with-border" name="password-repeat-register" id="password-repeat-register" placeholder="Repeat Password" required/>
+					</div>
+				</form>
+				<!-- Button for submission -->
+				<button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit" form="register-account-form">Register <i class="icon-material-outline-arrow-right-alt"></i></button>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="margin-top-70"></div>
+
+<!-- Footer -->
+<div id="footer">
+		<div class="footer-top-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="footer-rows-container">
+						<div class="footer-rows-left">
+							<div class="footer-row">
+								<div class="footer-row-inner footer-logo">
+									<img src="images/logo2.png" alt="">
+								</div>
+							</div>
+						</div>
+                    <div class="footer-rows-right">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-middle-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-2 col-lg-2 col-md-3">
+					<div class="footer-links">
+						<h3>For Candidates</h3>
+						<ul>
+							<li><a href="#"><span>Browse Jobs</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-2 col-md-3">
+					<div class="footer-links">
+						<h3>For Employers</h3>
+						<ul>
+							<li><a href="#"><span>Browse Candidates</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-2 col-md-3">
+					<div class="footer-links">
+						<h3>Helpful Links</h3>
+						<ul>
+							<li><a href="#"><span>Contact</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-2 col-lg-2 col-md-3">
+					<div class="footer-links">
+						<h3>Account</h3>
+						<ul>
+							<li><a href="#"><span>Log In</span></a></li>
+							<li><a href="#"><span>My Account</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-12">
+					<h3><i class="icon-feather-mail"></i> Sign Up For a Newsletter</h3>
+					<p>Weekly breaking news, analysis and cutting edge advices on job searching.</p>
+					<form action="#" method="get" class="newsletter">
+						<input type="text" name="fname" placeholder="Enter your email address">
+						<button type="submit"><i class="icon-feather-arrow-right"></i></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					© 2020 <strong>Gradforce</strong>. All Rights Reserved.
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<!-- Scripts -->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-migrate-3.1.0.min.js"></script>
+<script src="js/mmenu.min.js"></script>
+<script src="js/tippy.all.min.js"></script>
+<script src="js/simplebar.min.js"></script>
+<script src="js/bootstrap-slider.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/snackbar.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/counterup.min.js"></script>
+<script src="js/magnific-popup.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- Snackbar // documentation: https://www.polonel.com/snackbar/ -->
+<script>
+// Snackbar for user status switcher
+$('#snackbar-user-status label').click(function() { 
+	Snackbar.show({
+		text: 'Your status has been changed!',
+		pos: 'bottom-center',
+		showAction: false,
+		actionText: "Dismiss",
+		duration: 3000,
+		textColor: '#fff',
+		backgroundColor: '#383838'
+	}); 
+}); 
+</script>
+</body>
+</html>

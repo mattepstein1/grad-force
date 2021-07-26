@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+    
+<title>Gradforce</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors/blue.css">
+
+</head>
+<body class="gray">
+<div id="wrapper">
+
+<!-- Header -->
+<header id="header-container" class="fullwidth dashboard-header not-sticky">
+	<div id="header">
+		<div class="container">
+			<div class="left-side">
+				<div id="logo">
+					<a href="index.html"><img src="images/logo.png" alt=""></a>
+				</div>
+					<!-- Main Nav -->
+				<nav id="navigation">
+					<ul id="responsive">
+						<li><a href="index.html" class="current">Home</a>
+						</li>
+                        </ul>
+						<ul><li><a href="#">Find Work</a>
+							<ul class="dropdown-nav">
+								<li><a href="#">Browse Jobs</a>
+									<ul class="dropdown-nav">
+										<li><a href="jobs-list.html">List job</a></li>
+									</ul>
+								</li>
+						</li>
+						<li><a href="#">For Employers</a>
+							<ul class="dropdown-nav">
+		
+								<li><a href="dashboarder-post-a-job.html">Post a Job</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="clearfix"></div>
+			</div>
+			<div class="right-side">
+				<div class="header-widget">
+					<div class="header-notifications user-menu">
+						<div class="header-notifications-trigger">
+							<a href="#"><div class="user-avatar status-online"><img src="images/user-avatar-small-01.jpg" alt=""></div></a>
+						</div>
+						<!-- Dropdown -->
+						<div class="header-notifications-dropdown">
+							<!-- User Status -->
+							<div class="user-status">
+								<!-- User Name -->
+								<div class="user-details">
+									<div class="user-avatar status-online"><img src="images/user-avatar-small-01.jpg" alt=""></div>
+									<div class="user-name">
+										<span id="username"></span><span id = "user_type"></span>
+									</div>
+								</div>
+                                
+								<!-- User Switcher -->
+								<div class="status-switch" id="snackbar-user-status">
+									<label class="user-online current-status">Online</label>
+									<label class="user-invisible">OffLine</label>
+                                    
+									<!-- Status Indicator -->
+									<span class="status-indicator" aria-hidden="true"></span>
+								</div>	
+						</div>
+						<ul class="user-menu-small-nav">
+							<li><a href="dashboard_er.html"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
+							<li><a href="logout.php"><i class="icon-material-outline-power-settings-new"></i> Logout</a></li>
+						</ul>
+						</div>
+					</div>
+				</div>
+				<span class="mmenu-trigger">
+					<button class="hamburger hamburger--collapse" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+				</span>
+			</div>
+		</div>
+	</div>
+</header>
+<div class="clearfix"></div>
+
+<div class="dashboard-container">
+
+	<!-- Dashboard -->
+	<div class="dashboard-sidebar">
+		<div class="dashboard-sidebar-inner" data-simplebar>
+			<div class="dashboard-nav-container">
+
+				<!-- Responsive Nav -->
+				<a href="#" class="dashboard-responsive-nav-trigger">
+					<span class="hamburger hamburger--collapse" >
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</span>
+					<span class="trigger-title">Dashboard Navigation</span>
+				</a>
+				
+				<!-- Nav-->
+				<div class="dashboard-nav">
+					<div class="dashboard-nav-inner">
+						<ul data-submenu-title="Start">
+							<li class="active"><a href="dashboard_er.html"><i class="icon-material-outline-dashboard"></i> Dashboard</a></li>
+						</ul>
+						<ul data-submenu-title="Organize and Manage">
+							<li><a href="#"><i class="icon-material-outline-business-center"></i> Jobs</a>
+								<ul>
+									<li><a href="dashboarder-manage-jobs.html">Manage Jobs <span class="nav-tag">3</span></a></li>
+									<li><a href="dashboarder-manage-candidates.html">Manage Candidates</a></li>
+									<li><a href="dashboarder-post-a-job.html">Post a Job</a></li>
+								</ul>	
+							</li>
+						<ul data-submenu-title="Account">
+							<li><a href="logout.php"><i class="icon-material-outline-power-settings-new"></i> Logout</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Content -->
+	<div class="dashboard-content-container" data-simplebar>
+		<div class="dashboard-content-inner" >
+			
+			<!-- Headline -->
+			<div class="dashboard-headline">
+				<h3>Hi Employers</h3>
+				<span>We are glad to see you again!</span>
+
+				<!-- Breadcrumbs -->
+				<nav id="breadcrumbs" class="dark">
+					<ul>
+						<li><a href="index/">Home</a></li>
+						<li>Dashboard</li>
+					</ul>
+				</nav>
+			</div>
+	
+			<!-- Container -->
+			<div class="fun-facts-container">
+				<div class="fun-fact" data-fun-fact-color="#36bd78">
+					<div class="fun-fact-text">
+						<span>the list will show people applied it information </span>
+					</div>
+				</div>
+				<div class="fun-fact" data-fun-fact-color="#b81b7f">
+					<div class="fun-fact-text">
+						<span>Jobs Applied</span>
+						<h4 id="form_count"></h4>
+					</div>
+					<div class="fun-fact-icon"><i class="icon-material-outline-business-center"></i></div>
+				</div>
+				<div class="fun-fact" data-fun-fact-color="#efa80f">
+					<div class="fun-fact-text">
+						<span>Post job</span>
+						<h4  id="job_count" ></h4>
+					</div>
+					<div class="fun-fact-icon"><i class="icon-material-outline-rate-review"></i></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-8">
+				<header id="header-container" class="fullwidth dashboard-header not-sticky">
+                        <table id="tab" border="2">
+                        </table>
+				</div>
+				<div class="col-xl-4">
+				</div>
+			</div>
+			<div class="row">
+                
+			<!-- Footer -->
+			<div class="dashboard-footer-spacer"></div>
+			<div class="small-footer margin-top-15">
+				<div class="small-footer-copyrights">
+					© 2020 <strong>Gradforce</strong>
+				</div>
+				
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+<!-- Scripts-->
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery-migrate-3.1.0.min.js"></script>
+<script src="js/mmenu.min.js"></script>
+<script src="js/tippy.all.min.js"></script>
+<script src="js/simplebar.min.js"></script>
+<script src="js/bootstrap-slider.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/snackbar.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/counterup.min.js"></script>
+<script src="js/magnific-popup.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- Snackbar // documentation: https://www.polonel.com/snackbar/ -->
+<script>
+// Snackbar for user status switcher
+$('#snackbar-user-status label').click(function() { 
+	Snackbar.show({
+		text: 'Your status has been changed!',
+		pos: 'bottom-center',
+		showAction: false,
+		actionText: "Dismiss",
+		duration: 3000,
+		textColor: '#fff',
+		backgroundColor: '#383838'
+	}); 
+}); 
+</script>
+
+<!-- Chart.js // documentation: http://www.chartjs.org/docs/latest/ -->
+<script src="js/chart.min.js"></script>
+<script>
+	Chart.defaults.global.defaultFontFamily = "Nunito";
+	Chart.defaults.global.defaultFontColor = '#888';
+	Chart.defaults.global.defaultFontSize = '14';
+
+	var ctx = document.getElementById('chart').getContext('2d');
+
+	var chart = new Chart(ctx, {
+		type: 'line',
+
+		// The data for our dataset
+		data: {
+			labels: ["January", "February", "March", "April", "May", "June"],
+			// Information about the dataset
+	   		datasets: [{
+				label: "Views",
+				backgroundColor: 'rgba(42,65,232,0.08)',
+				borderColor: '#2a41e8',
+				borderWidth: "3",
+				data: [196,132,215,362,210,252],
+				pointRadius: 5,
+				pointHoverRadius:5,
+				pointHitRadius: 10,
+				pointBackgroundColor: "#fff",
+				pointHoverBackgroundColor: "#fff",
+				pointBorderWidth: "2",
+			}]
+		},
+
+		// Configuration options
+		options: {
+
+		    layout: {
+		      padding: 10,
+		  	},
+
+			legend: { display: false },
+			title:  { display: false },
+
+			scales: {
+				yAxes: [{
+					scaleLabel: {
+						display: false
+					},
+					gridLines: {
+						 borderDash: [6, 10],
+						 color: "#d8d8d8",
+						 lineWidth: 1,
+	            	},
+				}],
+				xAxes: [{
+					scaleLabel: { display: false },  
+					gridLines:  { display: false },
+				}],
+			},
+
+		    tooltips: {
+		      backgroundColor: '#333',
+		      titleFontSize: 13,
+		      titleFontColor: '#fff',
+		      bodyFontColor: '#fff',
+		      bodyFontSize: 13,
+		      displayColors: false,
+		      xPadding: 10,
+		      yPadding: 10,
+		      intersect: false
+		    }
+		},
+
+
+});
+
+</script>
+
+</body>
+</html>
+<script>
+    var tabData="";
+    $(document).ready(function () {
+        initVar();
+        $.ajax({
+            async:false,
+            url:'employers_data.php',
+            data:{},
+            type:'get',
+            dataType:'text',
+            success:function(data){
+                tabData=data;
+                initVar();
+                StrToArr(tabData);
+            }
+        });
+    });
+    function initVar(){
+        tabDom=$('#tab');
+    }
+    function StrToArr(str){
+        var arr=str.split('^');
+        var brr=[];
+        for(var i in arr){
+            brr.push(arr[i].split(','));
+        }
+        initHtml(brr);
+    }
+    function initHtml(arr){  
+        var str = "";
+        str +="<tr><th>firstName</th> <th>lastName</th><th>email</th><th>phone</th><th>University</th><th>educationl</th><th>visatype</th><th>workexp</th><th>joytype</th>/tr>"
+        for(var i in arr){
+            str+=`<tr>`;
+            for(var j in arr[i]){
+                str+= "<td>" + arr[i][j] + "</td>";
+            }
+            str+=`</tr>`
+        }
+        $('#tab').html(str);
+    }
+    var tabData="";
+    $(document).ready(function () {
+        $.ajax({
+            async:false,
+            url:'get_form_count.php',
+            data:{},
+            type:'get',
+            dataType:'text',
+            success:function(data){
+                tabData=data;
+				$('#form_count').html(data);
+            }
+        });
+		$.ajax({
+            async:false,
+            url:'get_job_count.php',
+            data:{},
+            type:'get',
+            dataType:'text',
+            success:function(data){
+                tabData=data;
+				$('#job_count').html(data);
+            }
+        });
+    });
+</script>
